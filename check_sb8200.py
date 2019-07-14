@@ -27,13 +27,13 @@ startDetail = startrows[3:]
 
 downrows = downstream.find_all('tr')
 downTitle = downrows[0].find('th').string
-downHead = downrows[1].find_all('strong')
-downChannel = downrows[2:]
+downHead = downrows[0].find_all('strong')
+downChannel = downrows[1:]
 
 uprows = upstream.find_all('tr')
 upTitle = uprows[0].find('th').string
-upHead = uprows[1].find_all('strong')
-upChannel = uprows[2:]
+upHead = uprows[0].find_all('strong')
+upChannel = uprows[1:]
 
 # Status
 
