@@ -9,7 +9,7 @@ try:
 except:
         print "WARNING: Unable to read from URL"
         exit(1)
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, "lxml")
 table = soup.find_all('table')
 
 # Define sections
